@@ -1,0 +1,21 @@
+server:
+  port: 8821
+
+spring:
+  application:
+    name: skmpgm-microservice-api-gateway-server
+  cloud:
+    gateway:
+      routes:
+        - id: skmpgm-user-service
+          uri: lb://skmpgm-user-service
+          predicates:
+            - Path=/user/**
+        - id: skmpgm-contact-service
+          uri: lb://skmpgm-contact-service
+          predicates:
+            - Path=/contact/**
+
+eureka:
+  instance:
+    hostname: localhost

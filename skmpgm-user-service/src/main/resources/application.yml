@@ -1,0 +1,10 @@
+server:
+  port: 1001
+
+spring:
+  application:
+    name: skmpgm-user-service
+
+eureka:
+  instance:
+    hostname: localhost

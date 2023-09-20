@@ -1,0 +1,27 @@
+#server:
+#  port: 1002
+#
+#spring:
+#  application:
+#    name: skmpgm-contact-service
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/sk_medico_pharma?useSSL=false
+#    username: root
+#    password: root
+#    hikari:
+#      initialization-fail-timeout: 0
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+#    generate-ddl: true
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  devtools:
+#    livereload:
+#      enabled: true
+#
+#
+#eureka:
+#  instance:
+#    hostname: localhost
